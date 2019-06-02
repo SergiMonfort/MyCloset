@@ -8,7 +8,7 @@ public class ClaseCloset {
 
 	@Override
 	public String toString() {
-		return "Atrévetetete, " + closet;
+		return "AAtrï¿½vetetete, " + closet;
 	}
 
 	
