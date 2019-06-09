@@ -1,0 +1,63 @@
+
+
+LISTA NECESIDADES (¿cómo vamos a hacerlo?)
+	- Álvaro - CSS páginas
+	- Logo rosado, dorado y negro... Diseño página colores pastel, ropa colores vivos (ÁLVARO)7
+	- INDEX.HTML
+		- Logo: Álvaro
+		- Iconos hombre-mujer (mujer Alert Próximamente)
+		- Hombre redirige a LOGIN.JSP
+
+	- LOGIN.JSP formulario (Dasha)	
+		- Nombre y contraseña, añade el stament a la BBDD
+		- Botón Login lleva a MAIN.HTML
+		- ¿Creación de avatar?
+
+	- MAIN.jsp
+		- Navegador
+			- Mi armario (primero aparece "El armario está vacío. ¿Quieres añadir?" y redirige de 			vuelta)
+			- Próximamente	
+			- Contacto
+		- Cuatro botones para cada pag (arribaext, arribaint, abajo y calzado)
+		- Botón con texto e imagen de ejemplo 
+
+	- ARRIBAEXT/ARRIBAINT/ABAJO/CALZADO (RUBÉN)
+		- En cada una, todas las prendas con su nombre y las bolitas de color
+		- Usuario pasa el ratón por los botones y se ven las prendas coloreadas. Se seleccionan únicamente
+		cuando el usuario aprieta la bolita. Se guardan los cambios con el botón final de "Guardar 		prenda" (¿añadir botón de limpiar?)
+
+	TAREAS:
+	- ÁLVARO: logo, prendas y css
+	- DASHA: Login y  cuatro casillas
+	- RUBÉN: Páginas de selección de prendas y su código
+	- SERGI: Página main, navegador, contacto y próximamente (comentarios importantes para entendernos)
+
+TENER ESTO LISTO PARA EL VIERNES 14JUN A LA HORA DEL DESCANSO
+
+	- En la reunión del viernes, evaluar semana, carga de trabajo y replanteamiento (balance)
+	- Ver siguientes pasos
+	- Nueva reunión en campamento base (casa de Dasha) ese finde
+
+	Luego, para el viernes 21:
+	- RESTO DE LA PÁGINA (combinaciones y algoritmo)
+	- ¿Organizar otra reunión en campamento base?
+
+		- Ver qué factores entran en el algoritmo: si se tiene en cuenta estación y clima o no,
+		la no repetición de combinaciones... (mapas? colecciones?)
+		si habrá calendario... o si sencillamente tiene en cuenta el color (según cómo vayamos)
+
+		- COMBINAME.jsp
+		- Muestra combinaciones aleatorias según los factores decididos. El usuario puede elegir
+		quedarse con un conjunto o rechazarlo. El conjunto se guarda en el historial. 
+
+		- VERARMARIO.jsp
+		- Muestra sencilla de las prendas que has elegido antes, clasificadas por arriba, abajo...
+		NO CONJUNTOS
+
+		- HISTORIAL.jsp
+		- Muestra los conjuntos que has ido eligiendo. No va por calendario. Pueden guardarse los
+		que el usuario desee (según la ropa que haya elegido al principio).
+
+	Para el miércoles 26 (último día):
+	- Corrección de errores y lo que quede para tener lista la presentación
+	- ¿Hacer la memoria del proyecto?
