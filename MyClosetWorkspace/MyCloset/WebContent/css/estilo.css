@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+.topnav {
+  background-color: #f0bfe7;
+  text-align: center;
+  overflow: hidden;
+  font-family:'Happy Camper';
+}
+
+p{
+	font-family: Arial;
+}
+
+.topnav a {
+  float: left;
+  color: #400040;
+  text-align: center;
+  padding: 14px 6.3%;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ebcfe8;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #ce53ac;
+  color: white;
+}
+
+button {
+  display: block, list-item;
+  color: #400040;
+  font-family:'Berlin Sans FB';
+  text-align: center;
+  font-size: 16px;
+  background-color: #f8e0f3;
+  width: 100px;
+}
+
+footer {
+  display: block;
+  color: #400040;
+  font-family:'Happy Camper';
+  text-align: center;
+  font-size: 13px;
+  background-color: #f0bfe7;
+  padding: 2px;
+}
