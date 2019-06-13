@@ -14,14 +14,15 @@
   <a class="active" href="proximamente.jsp">Proximamente</a>
   <a href="contacto.jsp">¿Quienes somos?</a>
 </div> 
-	<h1>Próximamente en MyCloset</h1>
-	<div>
+	<h1 id ="proximamente">Próximamente en MyCloset</h1>
+	<div id = "proximamente2">
 	<p> - Vestuario femenino </p>
 	<p> - Combinaciones según el clima </p>
 	<p> - Guarda tus combinaciones en un calendario </p>
 	<p> - Avisos y notificaciones </p>
 	<p> - Más variedad para elegir </p>
 	</div>
+	
 	 <footer>
     <p id="footero">MyCloset (2019)</p>
 </footer> 

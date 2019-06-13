@@ -15,11 +15,14 @@
   <a href="proximamente.jsp">Proximamente</a>
   <a href="contacto.jsp">¿Quienes somos?</a>
 </div> 
-  <button type="button">Arriba exterior</button> 
-  <button type="button">Arriba interior</button> 
+<br>
+
+  <button type="button" id="button1">Arriba exterior</button> 
+  <button type="button" id="button2">Arriba interior</button> 
+  <button type="button" id="button1">Abajo</button> 
+  <button type="button" id="button2">Calzado</button> 
   <br>
-  <button type="button">Abajo</button> 
-  <button type="button">Calzado</button> 
+  <br>
  <footer>
   <p id="footero">MyCloset (2019)</p>
 </footer> 
