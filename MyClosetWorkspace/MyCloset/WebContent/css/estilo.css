@@ -1,24 +1,26 @@
 @charset "UTF-8";
 
+body{
+	background-color: #f8fbd7;
+	}
 
 .topnav {
   background-color: #f0bfe7;
   text-align: center;
   overflow: hidden;
   font-family:'Happy Camper';
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-p{
-	font-family: Arial;
-}
 
 .topnav a {
   float: left;
   color: #400040;
   text-align: center;
-  padding: 14px 6.3%;
+  padding: 30px 8.1%;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 
@@ -34,21 +36,101 @@ p{
 }
 
 button {
-  display: block, list-item;
+	display: inline;
   color: #400040;
   font-family:'Berlin Sans FB';
-  text-align: center;
-  font-size: 16px;
+  font-size: 30px;
   background-color: #f8e0f3;
-  width: 100px;
+  width: 300px;
+  height: 300px;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-bottom: 20px;
 }
+
+
+
+#proximamente, #quienes, #miarmario{
+	text-align: center;
+	font-family:'Berlin Sans FB';
+	color: #400040;
+
+}
+
+#proximamente2, #contacto, #vacio, #anade{
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+	font-family: Georgia;
+}
+
+
+
+#ruben {
+	display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 20%;
+  float: left;    
+	margin-left: 20%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+}
+
+#darya {
+		display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 20%;
+  float: left;    
+	margin-left: 20%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+
+}
+
+#alvaro {
+		display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 20%;
+  float: left;    
+	margin-left: 20%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+
+}
+
+
+#sergi {
+	display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 20%;
+  float: left;    
+	margin-left: 20%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+border-radius: 90%;
+}
+
+#nombres{
+	font-family: 'Happy Camper';
+	font-size: 40px;
+}
+
 
 footer {
   display: block;
   color: #400040;
-  font-family:'Happy Camper';
+  font-family:'Berlin Sans FB';
   text-align: center;
   font-size: 13px;
   background-color: #f0bfe7;
   padding: 2px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+
+
