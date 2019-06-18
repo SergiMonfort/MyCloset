@@ -1,0 +1,332 @@
+@charset "ISO-8859-1";
+
+
+
+     
+.checkbox1{
+  float: left;
+  width:300px;
+}
+   
+
+.checkbox2{
+  float: left;
+  width:300px;
+}
+.checkbox3{
+  float: left;
+  width:300px;
+}
+
+.checkbox4{
+  float: left;
+  width:300px;
+}
+     
+body {
+	
+	
+ 
+  background: #ffdbed;
+   
+   }
+  
+  img#pacamiseta {
+ 
+ 
+  padding: 7px 40px;
+  width: 230px;
+}
+
+img#pacamisa{
+ 
+ 
+ 
+  width: 230px;
+  height: 300px;
+  
+}
+
+img#papolo {
+ 
+ 
+  padding: 7px 40px;
+  width: 215px;
+   width: 200px;
+ 
+}
+
+img#jersey {
+ 
+ 
+  padding: 7px 40px;
+  width: 280px;
+
+ 
+}
+
+    
+      
+  .formulario > div {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; }
+   
+   
+ 
+  .formulario .checkbox label{
+    display: inline-block;
+    cursor: pointer;
+
+    position: relative;
+    padding: 15px 0px 5px 36px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease
+    }
+    
+    
+    
+    .formulario .checkbox label:hover {
+      background: rgba(255, 65, 54, 0.1); }
+    .formulario .checkbox label#blanco:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: white;
+      border: 1px solid black; }
+      
+      .formulario .checkbox label#beige:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #d0c19d;
+      border: 1px solid black; }
+      
+      .formulario .checkbox label#gris:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #c0c0c0;
+      border: 1px solid black; }
+      
+      .formulario .checkbox label#AzulCielo:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #b3fdfa;
+      border: 1px solid black; }
+      
+      .formulario .checkbox label#rosa:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #ff91ff;
+      border: 1px solid black; }
+      
+         .formulario .checkbox label#amarillo:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #ffff17;
+      border: 1px solid black; }
+      
+         .formulario .checkbox label#naranja:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #ff8000;
+      border: 1px solid black; }
+      
+         .formulario .checkbox label#negro:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #000000;
+      border: 1px solid #ffffff; }
+      
+         .formulario .checkbox label#marron:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #804000;
+      border: 1px solid black; }
+      
+         .formulario .checkbox label#azulmarino:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #000080;
+      border: 1px solid black; }
+      
+         .formulario .checkbox label#verde:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #008000;
+      border: 1px solid black; }
+      
+         .formulario .checkbox label#rojo:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #d90606;
+      border: 1px solid black; }
+      
+         .formulario .checkbox label#morado:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: #400080;
+      border: 1px solid black; }
+      
+  .formulario input[type="radio"] {
+    display: none; }
+    .formulario input[type="radio"]:checked + label:before {
+      display: none; }
+    .formulario input[type="radio"]:checked + label {
+      padding: 5px 15px;
+      background: #FF4136;
+      border-radius: 2px;
+      color: #fff; }
+  .formulario .checkbox label:before {
+    border-radius: 3px; }
+  .formulario .checkbox input[type="checkbox"] {
+   
+    display: none;
+
+     }
+    
+    .formulario .checkbox input[type="checkbox"]:checked + label:before {
+      display: none; }
+    .formulario .checkbox input[type="checkbox"]:checked + label#blanco{
+      background: #ffffff;
+      color: #fff;
+      padding: 5px px ; 
+      border-radius: 20%;}  
+       
+  .formulario .checkbox input[type="checkbox"]:checked + label#beige{
+      background: #d0c19d;
+      color: #fff;
+      padding: 5px px; 
+      border-radius: 20%;}      
+         .formulario .checkbox input[type="checkbox"]:checked + label#gris{
+      background: #c0c0c0;
+      color: #fff;
+      padding: 5px px ; 
+      border-radius: 20%;}      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#AzulCielo{
+      background: #b3fdfa;
+      color: #fff;
+      padding: 5px px; 
+      border-radius: 20%;}      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#rosa{
+      background: #ff91ff;
+      color: #fff;
+      padding: 5px px; 
+      border-radius: 20%;}      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#amarillo{
+      background: #ffff17;
+      color: #fff;
+      padding: 5px px; 
+      border-radius: 20%;}      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#naranja{
+      background: #ff8000;
+      color: #fff;
+      padding: 5px px; 
+      border-radius: 20%;}      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#negro{
+      background: #000000;
+      color: #fff;
+      padding: 5px px; 
+      border-radius: 20%;}      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#marron{
+      background: #804000;
+      color: #fff;
+      padding: 5px px; 
+      border-radius: 20%;}      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#azulmarino{
+      background: #000080;
+      color: #fff;
+      padding: 5px px; 
+      border-radius: 20%;}      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#verde{
+      background: #006400;
+      color: #fff;
+      padding: 5px px; 
+      border-radius: 20%;}      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#rojo{
+      background: #d90606;
+      color: #fff;
+      padding: 5px px ;
+      border-radius: 20%;}
+      
+      
+      .formulario .checkbox input[type="checkbox"]:checked + label#morado{
+      background: #400080;
+      color: #fff;
+      padding: 5px px ; 
+      border-radius: 20%;}      
+
