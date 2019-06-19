@@ -36,14 +36,17 @@ $(document).ready( function() {
 	<div id="contenidoExterno">  </div>
 		
 	 <fieldset>	
-		
+		<!-- ojo esta en method post-->
 		<form action="algoritmo.jsp" method="post" class="formulario" >
 		
-		
+		                                                               
 		<div class="checkbox1">
 			<div class="checkbox"  id ="bloque1">
 				<h2>Camiseta<img src="imagenes/camiseta.png" align="left" id="pacamiseta"  > </h2>
 				<br>
+				<!-- lo que interea de cara a la  BD es en NAME y VALUE
+ya que todo forma parte de un mismo action, si es necesario puedes borrar los demas action de eleccion2 y 3 (ya que no se si deban o no
+existir ahi puesto que en realidad todo forma parte de la misma pagina, pregunta a airton-->
 				<input type="checkbox" name="camiseta" id="checkbox1" value="blanco">
 				<label for="checkbox1" id="blanco">Blanco</label>
 		
