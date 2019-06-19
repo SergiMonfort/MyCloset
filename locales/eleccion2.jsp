@@ -7,15 +7,28 @@
 <link rel="stylesheet" href="css/css.css">
 <link rel="stylesheet" href="css/estilo.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<script src="js/js.js" type="text/javascript"> 
+</script>
+<script>  
+$(document).ready( function() {  
+      $("#botonenviar2").click(function(){
+          
+                $("#contenidoExterno2").load("eleccion3.jsp");
+           
+           
+           });
+
+});
+
+
+</script>
 <title>Insert title here</title>
 </head>
 <body>
-<div class="topnav">
-		
-			<a class="active" href="main.jsp">Home</a> <a href="miarmario.jsp">Mi
-			armario</a> <a href="proximamente.jsp">Proximamente</a>
-			 <a href="contacto.jsp">¿Quienes somos?</a>
-		</div>
+
+<div id="contenidoExterno2">  </div>
+      <fieldset>
+
 		<form action="algoritmo.jsp" method="post" class="formulario" >
 		<div class="checkbox1">
 			<div class="checkbox"  id ="bloque1">
@@ -206,8 +219,9 @@
 			<br>
 			<br>
 			<br>
-				<input type="submit" value="Siguiente" />
+			<input type="button" id="botonenviar2" value="Siguiente">
+			
 		</form>
-	
+	</fieldset>
 </body>
 </html>
