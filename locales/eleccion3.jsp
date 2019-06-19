@@ -10,18 +10,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div class="topnav">
-		
-			<a class="active" href="main.jsp">Home</a> <a href="miarmario.jsp">Mi
-			armario</a> <a href="proximamente.jsp">Proximamente</a>
-			 <a href="contacto.jsp">¿Quienes somos?</a>
-		</div>
+     	 <fieldset>
 		<form action="algoritmo.jsp" method="post" class="formulario" >
+		
+		
 		<div class="checkbox1">
 			<div class="checkbox"  id ="bloque1">
 				<h2>Casual<img src="imagenes/casual.png" align="left" id="pacamiseta"  > </h2>
 				<br>
-				<input type="checkbox" name="casual" id="casualblanco" value="blanco">
+				<input type="checkbox" name="casual" id="casualblanco" value="blanco">  <!-- lo que interea de cara a la  BD es en name y el value-->
 				<label for="casualblanco" id="blanco">Blanco</label>
 		
 				<input type="checkbox" name="casual" id="casual" value="beige">
@@ -206,8 +203,10 @@
 			<br>
 			<br>
 			<br>
-				<input type="submit" value="Siguiente" />
+			
+				<input type="submit" value="Combinar" />  
 		</form>
+		 </fieldset>
 	
 </body>
 </html>
