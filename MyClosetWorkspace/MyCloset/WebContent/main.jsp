@@ -15,11 +15,14 @@
   <a href="proximamente.jsp">Proximamente</a>
   <a href="contacto.jsp">¿Quienes somos?</a>
 </div> 
-  <button type="button">Arriba exterior</button> 
-  <button type="button">Arriba interior</button> 
+<br>
+
+  <!-- <button type="button" id="buttonext"><img src="images/chaquetarosarosa.png" width="220px" height= "220px"/>Arriba exterior</button>  -->
+  <button type="button" onclick="location.href='eleccion.jsp'" id="buttonint"><img src="images/camisaazulrosa.png" width="220px" height= "220px"/>Arriba</button> 
+  <button type="button" onclick="location.href='eleccion2.jsp'"id="buttondown"><img src="images/pantaloncitorosa.png" width="220px" height= "220px"/>Abajo</button> 
+  <button type="button" onclick="location.href='eleccion3.jsp'"id="buttonshoe"><img src="images/botasrosa.png" width="220px" height= "220px"/>Calzado</button> 
   <br>
-  <button type="button">Abajo</button> 
-  <button type="button">Calzado</button> 
+  <br>
  <footer>
   <p id="footero">MyCloset (2019)</p>
 </footer> 
