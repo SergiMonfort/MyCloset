@@ -7,18 +7,21 @@
 <link rel="stylesheet" href="css/css.css">
 <link rel="stylesheet" href="css/estilo.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
 <title>Calzado</title>
+<script src="js/js.js"> </script>
+<script src="js/script.js"> </script>
 </head>
 <body>
 
      	 <fieldset>
-		<form action="algoritmo.jsp" method="post" class="formulario" >
+		 <form action="Armario" method="post" class="formulario" >
 		
 		
 		<div class="checkbox1">
 			<div class="checkbox"  id ="bloque1">
 				<h2>Casual<img src="images/casual.png" align="left" id="pacamiseta"  > </h2>
-				<br>
+				<br> 
 				<input type="checkbox" name="casual" id="casualblanco" value="blanco">  <!-- lo que interea de cara a la  BD es en name y el value-->
 				<label for="casualblanco" id="blanco">Blanco</label>
 		
@@ -205,7 +208,7 @@
 			<br>
 			<br>
 			
-				<input type="submit" value="Combinar" />  
+			<input type="submit" value="Combinar" /> 
 		</form>
 		 </fieldset>
 	

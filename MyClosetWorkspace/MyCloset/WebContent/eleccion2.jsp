@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="css/css.css">
 <link rel="stylesheet" href="css/estilo.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<script src="js/js.js" type="text/javascript"> 
-</script>
+<script src="js/js.js"> </script>
+<script src="js/script.js"> </script>
+
 <script>  
 $(document).ready( function() {  
       $("#botonenviar2").click(function(){

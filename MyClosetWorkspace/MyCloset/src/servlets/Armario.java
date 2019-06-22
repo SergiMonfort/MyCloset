@@ -2,12 +2,13 @@ package servlets;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
+//import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 @WebServlet("/Armario")
@@ -21,13 +22,25 @@ public class Armario extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 		
-		RequestDispatcher rd;
+		//RequestDispatcher rd;
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
-		String textopolo = request.getParameter("textopolo");
-		//PrintWriter salida = response.getWriter();
 		
+		/*int i=0;
+		String col[] = new String [12];
+		for (i=0; i<12; i++){
+			col[i]="<p>"+request.getParameter("camiseta"+i)+"</p>";
+		} 
+		
+	    		//String casual= request.getParameter("mensaje");
+	    		HttpSession sesion = request.getSession();
+	    		sesion.setAttribute("casual", col[i]);
+	    		response.sendRedirect("miarmario.jsp");*/
+	    	
+	}
+
 	//	ServletContext contextoAplicacion = this.getServletContext();
 	//	LogicaBD logicaBD = (LogicaBD) contextoAplicacion.getAttribute("miLogicaBD");
 		
@@ -35,7 +48,7 @@ public class Armario extends HttpServlet {
 		//model.Factura fact = logicaBD.obtenerFactura(numero);
 		
 		
-		if (isNullOrEmpty(textopolo)) {
+		/*if (isNullOrEmpty(casual)) {
 			rd = request.getRequestDispatcher("/miarmario.jsp");
 		}
 		else {
@@ -43,12 +56,15 @@ public class Armario extends HttpServlet {
 		} rd.forward(request, response);
 		
 	}
+
 		
 	public static boolean isNullOrEmpty(String str) {
         if(str != null && !str.isEmpty())
             return false;
         return true;
     }
+	
+	*/
 		
 		
 		/*if (fact == null) {
@@ -95,8 +111,31 @@ public class Armario extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		doGet(request, response);
+		response.setContentType("text/html");
+		response.setCharacterEncoding("UTF-8");
+		
+		
+		
+		//String casual= request.getParameter("mensaje");
+	
+		
+		int i=0;
+		String col[] = new String[15]; //está en 15 aunque haya 13 colores porque si pongo menos me da ArrayOutOfBoundsException
+		for (i=0; i<=13; i++){
+			col[i]="<p>"+request.getParameter("camiseta"+i)+"</p>";
+		} //Creo que el problema de esta función es que no considera el valor, hay alternativa en script.js
+		
+	    		//String casual= request.getParameter("mensaje");
+	    		HttpSession sesion = request.getSession();
+	    		sesion.setAttribute("casual", col[i]);
+	    		response.sendRedirect("miarmario.jsp");
+	    	
 	}
+		/*doGet(request, response);
+	}*/
+
+
+
+
 
 }

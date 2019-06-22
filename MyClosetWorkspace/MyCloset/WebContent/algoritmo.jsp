@@ -4,9 +4,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Mi armario</title>
 </head>
 <body>
-	Hola
+<%String col[] = new String [14];
+for (int i=0; i<14; i++){
+	col[i]="<p>"+request.getParameter("checkbox"+i)+"</p>";
+} %>
+<div id="myEmptyDiv">
+
+</div>
 </body>
 </html>
