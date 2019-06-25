@@ -74,19 +74,12 @@ public class prueba extends HttpServlet {
 
 	}
 	/*
-	 * String[] casual = request.getParameterValues("casual");
-	 * 
-	 * int i=0; String col[] = new String[15]; //está en 15 aunque haya 13 colores
-	 * porque si pongo menos me da ArrayOutOfBoundsException for (i=0; i<=13; i++){
-	 * col[i]="<p>"+request.getParameter("camiseta"+i)+"</p>"; } //Creo que el
-	 * problema de esta función es que no considera el valor, hay alternativa en
-	 * script.js
-	 * 
-	 * //String casual= request.getParameter("mensaje");
-	 * 
-	 * 
-	 * request.setAttribute("casual", casual);
-	 * request.getRequestDispatcher("/miarmario.jsp").forward(request, response);
+CREATE TABLE `armario` (
+ `Id` INT(11) NOT NULL AUTO_INCREMENT,
+ `id_usuario` INT(11) NOT NULL,
+ `id_prenda` INT(11) NOT NULL,
+
+ PRIMARY KEY (`Id`)
 	 * 
 	 */
 
@@ -106,7 +99,7 @@ public class prueba extends HttpServlet {
 
 		
 		
-		for (int i = 105; i <= 164; i++) {
+		for (int i = 1; i <= 164; i++) {
 			String o = Integer.toString(i);
 
 			recuperacion = request.getParameter(o);
