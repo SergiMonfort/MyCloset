@@ -21,6 +21,7 @@ public class prueba extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	static Connection con;
 	static String recuperacion;
+	static int contador=1;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -44,19 +45,19 @@ public class prueba extends HttpServlet {
 		}
 		System.out.println("Se ha cargado el Driver de MySQL");
 
-		// Paso 2: Establecer conexiÛn con la base de datos
-		String cadenaConexion = "jdbc:mysql://localhost:3306/my_closet";
+		// Paso 2: Establecer conexi√≥n con la base de datos
+		String cadenaConexion = "jdbc:mysql://localhost:3306/my_closet2";
 		String user = "root";
 		String pass = "donchekes1";
 
 		try {
 			con = DriverManager.getConnection(cadenaConexion, user, pass);
 		} catch (SQLException e) {
-			System.out.println("No se ha podido establecer la conexiÛn con la BD");
+			System.out.println("No se ha podido establecer la conexi√≥n con la BD");
 			System.out.println(e.getMessage());
 			return;
 		}
-		System.out.println("Se ha establecido la conexiÛn con la Base de datos");
+		System.out.println("Se ha establecido la conexi√≥n con la Base de datos");
 
 	}
 
@@ -66,16 +67,19 @@ public class prueba extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		
+		
 		// TODO Auto-generated method stub
 
 	}
 	/*
 	 * String[] casual = request.getParameterValues("casual");
 	 * 
-	 * int i=0; String col[] = new String[15]; //est· en 15 aunque haya 13 colores
+	 * int i=0; String col[] = new String[15]; //est√° en 15 aunque haya 13 colores
 	 * porque si pongo menos me da ArrayOutOfBoundsException for (i=0; i<=13; i++){
 	 * col[i]="<p>"+request.getParameter("camiseta"+i)+"</p>"; } //Creo que el
-	 * problema de esta funciÛn es que no considera el valor, hay alternativa en
+	 * problema de esta funci√≥n es que no considera el valor, hay alternativa en
 	 * script.js
 	 * 
 	 * //String casual= request.getParameter("mensaje");
@@ -98,38 +102,42 @@ public class prueba extends HttpServlet {
 
 		PrintWriter salida = response.getWriter();
 
+	
+
 		
-		salida.println("Numero: ");
+		
 		for (int i = 105; i <= 164; i++) {
 			String o = Integer.toString(i);
 
 			recuperacion = request.getParameter(o);
+			
 
 			if (recuperacion != null) {
+				int recu=Integer.parseInt(recuperacion);
 				try {
 					Statement sentencia = con.createStatement();
 
 					// String sql = "INSERT INTO PARTIDO VALUES ('11111 'Pepe perez', 'calle oca
 					// 54', 'Real Vallecas', 2, 2);";
-					String sql = "INSERT INTO armario (id_usuario, id_prenda ) values ( 1, recuperacion)";
-					int afectados = sentencia.executeUpdate(sql);
+					
+					String sql = "INSERT INTO armario2 (id_usuario, id_prenda )" + "VALUES ( '" +contador+ "', '" +recu+ "')"  ;
+					
+					sentencia.executeUpdate(sql);
 					
 					/*
 					 * sql =
 					 * "INSERT INTO PARTIDO VALUES (3, '2018-06-12 21:30:00', 'Real Vallecas', 'Elipa FC', 4, 3);"
 					 * ; sentencia.executeUpdate(sql); sql =
-					 * "INSERT INTO PARTIDO VALUES (4, '2018-06-14 17:30:00', 'Ciudad Lineal CF', 'ChamberÌ CF', 2, 4);"
+					 * "INSERT INTO PARTIDO VALUES (4, '2018-06-14 17:30:00', 'Ciudad Lineal CF', 'Chamber√≠ CF', 2, 4);"
 					 * ; sentencia.executeUpdate(sql);
 					 */
-					System.out.println("Se ha aÒdido ");
+					System.out.println("Se ha a√±dido ");
 				} catch (SQLException e) {
 					System.out.println("Error");
 					System.out.println(e.getMessage());
 				}
 
-			} else {
-				salida.println("no se aniadio");
-			}
+			} contador++;
 		}
 
 		
@@ -140,11 +148,11 @@ public class prueba extends HttpServlet {
 		// TODO Auto-generated method stub
 		super.destroy();
 
-		// Paso 4: Cerrar la conexiÛn
+		// Paso 4: Cerrar la conexi√≥n
 		try {
 			con.close();
 		} catch (SQLException e) {
-			System.out.println("No se ha podido cerrar la conexiÛn con la BD");
+			System.out.println("No se ha podido cerrar la conexi√≥n con la BD");
 			System.out.println(e.getMessage());
 			return;
 		}
