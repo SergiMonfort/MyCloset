@@ -6,47 +6,58 @@ import javax.persistence.*;
 @Table(name = "prenda")
 public class Prenda {
 
-    @Id
-    @Column(name = "id_prenda")
-    Long idPrenda;
+	@Id
+	@Column(name = "id_prenda")
+	private Long idPrenda;
 
-    @Column(name = "nombre_prenda")
-    String nombrePrenda;
+//	@Column(name = "nombre_prenda")
+//	private String nombrePrenda;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_detalle", nullable = false)
-    DetallePrenda detallePrenda;
+//	@ManyToOne(fetch = FetchType.EAGER)
+//	@JoinColumn(name = "id_detalle", nullable = false)
+//	DetallePrenda detallePrenda;
 
-public Prenda(){
-}
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "id_tipo_prenda", nullable = false)
+	private TipoPrenda tipoPrenda;
 
-    public Prenda(Long idPrenda, String nombrePrenda, DetallePrenda detallePrenda) {
-        this.idPrenda = idPrenda;
-        this.nombrePrenda = nombrePrenda;
-        this.detallePrenda = detallePrenda;
-    }
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "id_color", nullable = false)
+	private Color color;
 
-    public Long getIdPrenda() {
-        return idPrenda;
-    }
+	public Prenda() {
+	}
 
-    public void setIdPrenda(Long idPrenda) {
-        this.idPrenda = idPrenda;
-    }
+	public Prenda(Long idPrenda, TipoPrenda tipoPrenda, Color color) {
+		this.idPrenda = idPrenda;
+		this.tipoPrenda = tipoPrenda;
+		this.color = color;
+	}
 
-    public String getNombrePrenda() {
-        return nombrePrenda;
-    }
+	public Long getIdPrenda() {
+		return idPrenda;
+	}
 
-    public void setNombrePrenda(String nombrePrenda) {
-        this.nombrePrenda = nombrePrenda;
-    }
+	public void setIdPrenda(Long idPrenda) {
+		this.idPrenda = idPrenda;
+	}
 
-    public DetallePrenda getDetallePrenda() {
-        return detallePrenda;
-    }
 
-    public void setDetallePrenda(DetallePrenda detallePrenda) {
-        this.detallePrenda = detallePrenda;
-    }
+
+
+	public TipoPrenda getTipoPrenda() {
+		return tipoPrenda;
+	}
+
+	public void setTipoPrenda(TipoPrenda tipoPrenda) {
+		this.tipoPrenda = tipoPrenda;
+	}
+
+	public Color getColor() {
+		return color;
+	}
+
+	public void setColor(Color color) {
+		this.color = color;
+	}
 }
