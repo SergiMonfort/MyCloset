@@ -1,0 +1,619 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<script src="js/js.js"> </script>
+<script src="js/script.js"> </script>
+
+<title>Selección de armario</title>
+</head>
+<body>
+<div class="topnav">
+		
+			<a class="active" href="main.jsp">Home</a> <a href="miarmario.jsp">Mi
+			armario</a> <a href="proximamente.jsp">Proximamente</a>
+			 <a href="contacto.jsp">¿Quienes somos?</a>
+			 </div>
+			 
+			 
+	<div id="contenidoExterno">  </div>
+		
+	 <fieldset>	
+		<!-- ojo esta en method post-->
+		<form action="Armario" method="post" class="formulario" >
+		
+		                                                               
+		<div class="checkbox1">
+			<div class="checkbox"  id ="bloque1">
+				<h2>Camiseta<img src="images/Prendas/Arriba interior/Camisa corta/Blanco.png" align="left" id="pacamiseta"  > </h2>
+				<br>
+				<!-- lo que interea de cara a la  BD es en NAME y VALUE
+ya que todo forma parte de un mismo action, si es necesario puedes borrar los demas action de eleccion2 y 3 (ya que no se si deban o no
+existir ahi puesto que en realidad todo forma parte de la misma pagina, pregunta a airton-->
+				<input type="checkbox" name="camiseta1" id="checkbox1" value="blanco" class="camiseta">
+				<label for="checkbox1" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="camiseta2" id="checkbox2" value="beige" class="camiseta">
+				<label for="checkbox2" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="camiseta3" id="checkbox3" value="gris" class="camiseta">
+				<label for="checkbox3" id="gris">Gris  </label>
+				
+				<input type="checkbox" name="camiseta4" id="checkbox4" value="cielo" class="camiseta">
+				<label for="checkbox4" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="camiseta5" id="checkbox5" value="rosa" class="camiseta">
+				<label for="checkbox5" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="camiseta6" id="checkbox6" value="amarillo" class="camiseta">
+				<label for="checkbox6" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="camiseta7" id="checkbox7" value="naranja" class="camiseta">
+				<label for="checkbox7" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="camiseta8" id="checkbox8" value="negro" class="camiseta">
+				<label for="checkbox8" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="camiseta9" id="checkbox9" value="marron" class="camiseta">
+				<label for="checkbox9" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="camiseta10" id="checkbox10" value="marino" class="camiseta">
+				<label for="checkbox10" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="camiseta11" id="checkbox11" value="verde" class="camiseta">
+				<label for="checkbox11" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="camiseta12" id="checkbox12" value="rojo" class="camiseta">
+				<label for="checkbox12" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="camiseta13" id="checkbox13" value="morodo" class="camiseta">
+				<label for="checkbox13" id ="morado">Morado</label>
+				
+				</div>
+				</div>
+				
+				<div class="checkbox2">
+				<div class="checkbox" id ="bloque2">
+				<h2>Camisa<img src="images/Prendas/Arriba interior/Camisa larga/Blanco.png" align="left" id="pacamisa"> </h2>
+				<br>
+				
+				<input type="checkbox" name="camisa" id="camisablanco" value="blanco">
+				<label for="camisablanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="camisa" id="camisabeige" value="beige">
+				<label for="camisabeige" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="camisa" id="camisagris" value="gris">
+				<label for="camisagris" id="gris">Gris</label>
+				
+				<input type="checkbox" name="camisa" id="camisaazulcielo" value="cielo">
+				<label for="camisaazulcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="camisa" id="camisarosa" value="rosa">
+				<label for="camisarosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="camisa" id="camisaamarilla" value="amarillo">
+				<label for="camisaamarilla" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="camisa" id="camisanaranja" value="naranja">
+				<label for="camisanaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="camisa" id="camisanegro" value="negro">
+				<label for="camisanegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="camisa" id="camisamarron" value="marron">
+				<label for="camisamarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="camisa" id="camisaazulmarino" value="marino">
+				<label for="camisaazulmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="camisa" id="camisaverde" value="verde">
+				<label for="camisaverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="camisa" id="camisarojo" value="rojo">
+				<label for="camisarojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="camisa" id="camisamorado" value="morado">
+				<label for="camisamorado" id ="morado">Morado</label>
+			
+			</div>
+			</div>
+			<div class="checkbox3">
+			<div class="checkbox" id ="bloque">
+				<h2>Polo<img src="images/Prendas/Arriba interior/Polo/Blanco.png" align="left" id="papolo"> </h2>
+				<br><br>
+				
+				<input type="checkbox" name="polo" id="poloblanco" value="blanco">
+				<label for="poloblanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="polo" id="polobeige" value="beige">
+				<label for="polobeige" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="polo" id="pologris" value="gris">
+				<label for="pologris" id="gris">Gris</label>
+				
+				<input type="checkbox" name="polo" id="poloazulcielo" value="cielo">
+				<label for="poloazulcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="polo" id="polorosa" value="rosa">
+				<label for="polorosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="polo" id="poloamarillo" value="amarillo">
+				<label for="poloamarillo" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="polo" id="polonaranja" value="naranja">
+				<label for="polonaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="polo" id="polonegro" value="negro">
+				<label for="polonegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="polo" id="polomarron" value="polo">
+				<label for="polomarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="polo" id="poloazulmarino" value="marino">
+				<label for="poloazulmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="polo" id="poloverde" value="verde">
+				<label for="poloverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="polo" id="polorojo" value="rojo">
+				<label for="polorojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="polo" id="polomorado" value="morado">
+				<label for="polomorado" id ="morado">Morado</label>
+				
+			</div>
+			</div>
+			
+			
+				<div class="checkbox4">
+			<div class="checkbox" id ="bloque" >
+				<h2>Jersey <img src="images/Prendas/Arriba interior/Camiseta larga/Blanco.png" align="left" id="jersey"> </h2>
+				
+				<br><br>
+				<input type="checkbox" name="jersey" id="jerseyblanco" value="blanco">
+				<label for="jerseyblanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="jersey" id="jerseybeige" value="beige">
+				<label for="jerseybeige" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="jersey" id="jerseygris" value="gris">
+				<label for="jerseygris" id="gris">Gris</label>
+				
+				<input type="checkbox" name="jersey" id="jerseyazulcielo" value="cielo">
+				<label for="jerseyazulcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="jersey" id="jerseyrosa" value="rosa">
+				<label for="jerseyrosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="jersey" id="jerseyamarillo" value="amarillo">
+				<label for="jerseyamarillo" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="jersey" id="jerseynaranja" value="naranja">
+				<label for="jerseynaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="jersey" id="jerseynegro" value="negro">
+				<label for="jerseynegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="jersey" id="jerseymarron" value="marron">
+				<label for="jerseymarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="jersey" id="jerseyazulmarino" value="marino">
+				<label for="jerseyazulmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="jersey" id="jerseyverde" value="verde">
+				<label for="jerseyverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="jersey" id="jerseyrojo" value="rojo">
+				<label for="jerseyrojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="jersey" id="jerseymorado" value="morado">
+				<label for="jerseymorado" id ="morado">Morado</label>
+		
+			    
+			</div></div>
+			<br>
+			<br>
+			<br>
+			<br>
+				<div class="checkbox1">
+			<div class="checkbox"  id ="bloque1">
+			<br>
+				<h2>Jeans<img src="images/Prendas/Abajo/Jeans/Blanco.png" align="left" id="pacamiseta"  > </h2>
+				<br>
+				<input type="checkbox" name="jeans" id="checkbox1" value="blanco">
+				<label for="checkbox1" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="jeans" id="checkbox2" value="beige">
+				<label for="checkbox2" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox3" value="gris">
+				<label for="checkbox3" id="gris">Gris  </label>
+				
+				<input type="checkbox" name="jeans" id="checkbox4" value="cielo">
+				<label for="checkbox4" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox5" value="rosa">
+				<label for="checkbox5" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox6" value="amarillo">
+				<label for="checkbox6" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox7" value="naranja">
+				<label for="checkbox7" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox8" value="negro">
+				<label for="checkbox8" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox9" value="marron">
+				<label for="checkbox9" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox10" value="marino">
+				<label for="checkbox10" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox11" value="verde">
+				<label for="checkbox11" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox12" value="rojo">
+				<label for="checkbox12" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="jeans" id="checkbox13" value="morodo">
+				<label for="checkbox13" id ="morado">Morado</label>
+				
+				</div>
+				</div>
+				
+				<div class="checkbox2">
+				<div class="checkbox" id ="bloque2">
+				<br>
+				<h2>Chinos<img src="images/Prendas/Abajo/Chinos/Blanco.png" align="left" id="chinos"> </h2>
+				<br>
+				
+				<input type="checkbox" name="chinos" id="camisablanco" value="blanco">
+				<label for="camisablanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="chinos" id="camisabeige" value="beige">
+				<label for="camisabeige" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="chinos" id="camisagris" value="gris">
+				<label for="camisagris" id="gris">Gris</label>
+				
+				<input type="checkbox" name="chinos" id="camisaazulcielo" value="cielo">
+				<label for="camisaazulcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="chinos" id="camisarosa" value="rosa">
+				<label for="camisarosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="chinos" id="camisaamarilla" value="amarillo">
+				<label for="camisaamarilla" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="chinos" id="camisanaranja" value="naranja">
+				<label for="camisanaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="chinos" id="camisanegro" value="negro">
+				<label for="camisanegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="chinos" id="camisamarron" value="marron">
+				<label for="camisamarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="chinos" id="camisaazulmarino" value="marino">
+				<label for="camisaazulmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="chinos" id="camisaverde" value="verde">
+				<label for="camisaverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="chinos" id="camisarojo" value="rojo">
+				<label for="camisarojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="chinos" id="camisamorado" value="morado">
+				<label for="camisamorado" id ="morado">Morado</label>
+			
+			</div>
+			</div>
+			<div class="checkbox3">
+			<div class="checkbox" id ="bloque">
+			<br>
+				<h2>Bermudas </h2>
+				<br>
+				<img src="images/Prendas/Abajo/Bermuda/Bermuda blanca.png" align="left" id="bermudas">
+				<br><br>
+				
+				<input type="checkbox" name="bermudas" id="poloblanco" value="blanco">
+				<label for="poloblanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="bermudas" id="polobeige" value="beige">
+				<label for="polobeige" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="bermudas" id="pologris" value="gris">
+				<label for="pologris" id="gris">Gris</label>
+				
+				<input type="checkbox" name="bermudas" id="poloazulcielo" value="cielo">
+				<label for="poloazulcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="bermudas" id="polorosa" value="rosa">
+				<label for="polorosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="bermudas" id="poloamarillo" value="amarillo">
+				<label for="poloamarillo" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="bermudas" id="polonaranja" value="naranja">
+				<label for="polonaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="bermudas" id="polonegro" value="negro">
+				<label for="polonegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="bermudas" id="polomarron" value="polo">
+				<label for="polomarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="bermudas" id="poloazulmarino" value="marino">
+				<label for="poloazulmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="bermudas" id="poloverde" value="verde">
+				<label for="poloverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="bermudas" id="polorojo" value="rojo">
+				<label for="polorojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="bermudas" id="polomorado" value="morado">
+				<label for="polomorado" id ="morado">Morado</label>
+				
+			</div>
+			</div>
+			
+			
+				<div class="checkbox4">
+			<div class="checkbox" id ="bloque" >
+			<br>
+				<h2>Jogger <img src="images/Prendas/Abajo/Vestir/Blanco.png" align="left" id="pajogger"> </h2>
+				
+				<br><br>
+				<input type="checkbox" name="jogger" id="jerseyblanco" value="blanco">
+				<label for="jerseyblanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="jogger" id="jerseybeige" value="beige">
+				<label for="jerseybeige" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="jogger" id="jerseygris" value="gris">
+				<label for="jerseygris" id="gris">Gris</label>
+				
+				<input type="checkbox" name="jogger" id="jerseyazulcielo" value="cielo">
+				<label for="jerseyazulcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="jogger" id="jerseyrosa" value="rosa">
+				<label for="jerseyrosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="jogger" id="jerseyamarillo" value="amarillo">
+				<label for="jerseyamarillo" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="jogger" id="jerseynaranja" value="naranja">
+				<label for="jerseynaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="jogger" id="jerseynegro" value="negro">
+				<label for="jerseynegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="jogger" id="jerseymarron" value="marron">
+				<label for="jerseymarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="jogger" id="jerseyazulmarino" value="marino">
+				<label for="jerseyazulmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="jogger" id="jerseyverde" value="verde">
+				<label for="jerseyverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="jogger" id="jerseyrojo" value="rojo">
+				<label for="jerseyrojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="jogger" id="jerseymorado" value="morado">
+				<label for="jerseymorado" id ="morado">Morado</label>
+		
+			
+			</div></div>
+			
+			<br>
+		<div class="checkbox2">
+			<div class="checkbox"  id ="bloque2">
+			
+				<h2>Casual<img src="images/Prendas/Zapatos/Casual/Blanco.png" align="left" id="pacasual"  > </h2>
+				<br> 
+				<input type="checkbox" name="casual1" id="casualblanco" value="blanco">  <!-- lo que interea de cara a la  BD es en name y el value-->
+				<label for="casualblanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="casual2" id="casual" value="beige">
+				<label for="checkbox2" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="casual3" id="casualgris" value="gris">
+				<label for="casualgris" id="gris">Gris  </label>
+				
+				<input type="checkbox" name="casual4" id="casualcielo" value="cielo">
+				<label for="casualcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="casual5" id="casualrosa" value="rosa">
+				<label for="casualrosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="casual6" id="casualamarillo" value="amarillo">
+				<label for="casualamarillo" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="casual7" id="casualnaranja" value="naranja">
+				<label for="casualnaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="casual8" id="casualnegro" value="negro">
+				<label for="casualnegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="casual9" id="casualmarron" value="marron">
+				<label for="casualmarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="casual10" id="casualmarino" value="marino">
+				<label for="casualmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="casual11" id="casualverde" value="verde">
+				<label for="casualverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="casual12" id="casualrojo" value="rojo">
+				<label for="casualrojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="casual13" id="casualmorodo" value="morodo">
+				<label for="casualmorodo" id ="morado">Morado</label>
+				
+				</div></div>
+				
+				<div class="checkbox2">
+				<div class="checkbox" id ="bloque2">
+				<br>
+				<h2>Zapatillas<img src="images/Prendas/Zapatos/Zapatilla/Blanco.png" align="left" id="zapatilla"> </h2>
+				<br>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillablanco" value="blanco">
+				<label for="zapatillablanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="zapatillas" id="zapatillabeige" value="beige">
+				<label for="zapatillabeige" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillagris" value="gris">
+				<label for="zapatillagris" id="gris">Gris</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillaazulcielo" value="cielo">
+				<label for="zapatillaazulcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="zapatillas" id="camisarosa" value="rosa">
+				<label for="camisarosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillaamarillo" value="amarillo">
+				<label for="zapatillaamarillo" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillanaranja" value="naranja">
+				<label for="zapatillanaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillanegro" value="negro">
+				<label for="zapatillanegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillamarron" value="marron">
+				<label for="zapatillamarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillaazulmarino" value="marino">
+				<label for="zapatillaazulmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillaverde" value="verde">
+				<label for="zapatillaverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillarojo" value="rojo">
+				<label for="zapatillarojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="zapatillas" id="zapatillamorado" value="morado">
+				<label for="zapatillamorado" id ="morado">Morado</label>
+			
+			</div>
+			</div>
+			<div class="checkbox3">
+			<div class="checkbox" id ="bloque">
+			<br>
+				<h2>Zapatos<img src="images/Prendas/Zapatos/Zapato/Blanco.png" align="left" id="papolo"> </h2>
+				<br><br>
+				
+				<input type="checkbox" name="bermudas" id="zapatoblanco" value="blanco">
+				<label for="zapatoblanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="bermudas" id="zapatobeige" value="beige">
+				<label for="zapatobeige" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatogris" value="gris">
+				<label for="zapatogris" id="gris">Gris</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatoazulcielo" value="cielo">
+				<label for="zapatoazulcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatorosa" value="rosa">
+				<label for="zapatorosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatorosa" value="amarillo">
+				<label for="zapatorosa" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatonaranja" value="naranja">
+				<label for="zapatonaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatonegro" value="negro">
+				<label for="zapatonegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatomarron" value="polo">
+				<label for="zapatomarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatoazulmarino" value="marino">
+				<label for="zapatoazulmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatoverde" value="verde">
+				<label for="zapatoverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatorojo" value="rojo">
+				<label for="zapatorojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="bermudas" id="zapatomorado" value="morado">
+				<label for="zapatomorado" id ="morado">Morado</label>
+				
+			</div>
+			</div>
+			
+			
+				<div class="checkbox4">
+			<div class="checkbox" id ="bloque" >
+			<br>
+				<h2>Sandalias <img src="images/Prendas/Zapatos/Sandalias/Blanco.png" align="left" id="jersey"> </h2>
+				
+				<br><br>
+				<input type="checkbox" name="jogger" id="sandaliablanco" value="blanco">
+				<label for="sandaliablanco" id="blanco">Blanco</label>
+		
+				<input type="checkbox" name="jogger" id="sandaliabeige" value="beige">
+				<label for="sandaliabeige" id= "beige">Beige</label>
+				
+				<input type="checkbox" name="jogger" id="sandaliagris" value="gris">
+				<label for="sandaliagris" id="gris">Gris</label>
+				
+				<input type="checkbox" name="jogger" id="sandaliaazulcielo" value="cielo">
+				<label for="sandaliaazulcielo" id= "AzulCielo">Cielo</label>
+				
+				<input type="checkbox" name="jogger" id="sandaliarosa" value="rosa">
+				<label for="sandaliarosa" id= "rosa">Rosa</label>
+				
+				<input type="checkbox" name="jogger" id="sandaliaamarillo" value="amarillo">
+				<label for="sandaliaamarillo" id= "amarillo">Amarillo</label>
+				
+				<input type="checkbox" name="jogger" id="sandalianaranja" value="naranja">
+				<label for="sandalianaranja" id= "naranja">Naranja</label>
+				
+				<input type="checkbox" name="jogger" id="sandalianegro" value="negro">
+				<label for="sandalianegro" id= "negro">Negro</label>
+				
+				<input type="checkbox" name="jogger" id="sandaliamarron" value="marron">
+				<label for="sandaliamarron" id= "marron">Marron</label>
+				
+				<input type="checkbox" name="jogger" id="sandaliaazulmarino" value="marino">
+				<label for="sandaliaazulmarino" id ="azulmarino">Marino</label>
+				
+				<input type="checkbox" name="jogger" id="sandaliaverde" value="verde">
+				<label for="sandaliaverde" id ="verde">Verde</label>
+				
+				<input type="checkbox" name="jogger" id="sandaliarojo" value="rojo">
+				<label for="sandaliarojo" id ="rojo">Rojo</label>
+				
+				<input type="checkbox" name="jogger" id="sandaliamorado" value="morado">
+				<label for="sandaliamorado" id ="morado">Morado</label>
+		
+			
+			</div></div>
+			<br>
+			<br>
+			
+			<input type="submit" value="Guardar">
+		</form>
+		 </fieldset>
+	
+
+ <footer>
+  <p id="footero">MyCloset (2019)</p>
+</footer> 
+</body>
+</html>
